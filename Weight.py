@@ -85,10 +85,10 @@ def addWeight():
         try:
             weight = float(weight)
             updateChart(weight)
-            print('Chart updated')
+            print('Chart updated\n')
             break
         except ValueError:
-            print('Invalid input')
+            print('Invalid input\n')
 
 
 
@@ -102,23 +102,23 @@ if __name__ == '__main__':
         if option == 'quit' or option == 'add' or option == 'display' or option == 'help':
 
             if option == 'quit':
-                print('Quitting')
+                print('Quitting\n')
                 exit()
 
             if option == 'add':
                 addWeight()
             
             if option == 'display':
-                print('Displaying chart')
+                print('Displaying chart\n')
                 displayChart()
 
             if option == 'help':
-                print('quit : exit program \nadd : update weight\ndisplay : display chart')
+                print('quit : exit program \nadd : update weight\ndisplay : display chart\n')
             
 
 
         else:
-            print('invalid command')
+            print('invalid command\n')
         
         
     
